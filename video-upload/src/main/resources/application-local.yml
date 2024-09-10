@@ -1,0 +1,15 @@
+spring:
+
+  servlet:
+    multipart:
+      max-file-size: 5000MB   # Maksimum fayl ölçüsü
+      max-request-size: 5000MB # Maksimum sorğu ölçüsü (fayl + digər məlumatlar)
+  upload:
+    path: C:/Users/UFAZ/rateingaledev/file-upload-service-v2/uploads/video-upload # folder ucun path
+    video-quality: "480,720"
+    ffmpeg-path: C:/ffmpeg/files/bin/ffmpeg.exe  # ffmpeg path
+    ffprobe-path: C:/ffmpeg/files/bin/ffprobe.exe  # ffmpath
+server:
+  tomcat:
+    connection-timeout: 20M
+  port: 8080

@@ -1,0 +1,15 @@
+spring:
+  servlet:
+      multipart:
+        max-file-size: 5000MB
+        max-request-size: 5000MB
+  upload:
+      path: /root/File-Upload/video-upload/uploads/videos
+      video-quality: "480,720"
+      ffmpeg-path: /usr/bin/ffmpeg
+      ffprobe-path: /usr/bin/ffmpeg
+server:
+    tomcat:
+       connection-timeout: 20M
+    port: 8080
+
